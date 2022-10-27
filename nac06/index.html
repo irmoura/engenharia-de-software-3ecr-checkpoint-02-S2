@@ -176,10 +176,11 @@
 
             global navegacao
 
-            text = Element('test-input').element.value
+            opcao = Element('test-input').element.value
+            text = ''
 
             if(navegacao == 0):
-                match text:
+                match opcao:
                     case "1":
                         text = f'Escolha as opções de doces:\n\n1 - Pizzas doces \n2 - Sobremesa\n'
                         navegacao += 1
